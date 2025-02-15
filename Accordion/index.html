@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+      }
+
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .number {
+        color: #868e96;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+
+      .hidden-box .box-text {
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
+
+      .open .hidden-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">01</p>
+        <h1 class="text">Lorem ipsum dolor sit amet consectetur?</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p class="box-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            suscipit, mollitia voluptatem veritatis nostrum ex nesciunt maxime
+            quasi molestias repellendus illo, saepe velit at fugit! Tempora
+            delectus beatae doloribus dolor.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>
+              Natus fugiat suscipit, enim eligendi magnam provident veniam,
+              molestias ab nemo illo.
+            </li>
+            <li>Accusantium quaerat hic! Nostrum, dolore necessitatibus.</li>
+            <li>Explicabo temporibus dignissimos libero!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item open">
+        <p class="number">02</p>
+        <h1 class="text">How long do I have to return my chair?</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p class="box-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            suscipit, mollitia voluptatem veritatis nostrum ex nesciunt maxime
+            quasi molestias repellendus illo, saepe velit at fugit! Tempora
+            delectus beatae doloribus dolor.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>
+              Natus fugiat suscipit, enim eligendi magnam provident veniam,
+              molestias ab nemo illo.
+            </li>
+            <li>Accusantium quaerat hic! Nostrum, dolore necessitatibus.</li>
+            <li>Explicabo temporibus dignissimos libero!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="number">03</p>
+        <h1 class="text">Lorem ipsum frork sideijj amet consectetur ?</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p class="box-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            suscipit, mollitia voluptatem veritatis nostrum ex nesciunt maxime
+            quasi molestias repellendus illo, saepe velit at fugit! Tempora
+            delectus beatae doloribus dolor.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>
+              Natus fugiat suscipit, enim eligendi magnam provident veniam,
+              molestias ab nemo illo.
+            </li>
+            <li>Accusantium quaerat hic! Nostrum, dolore necessitatibus.</li>
+            <li>Explicabo temporibus dignissimos libero!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
